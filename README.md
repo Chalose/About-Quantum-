@@ -3,5 +3,5 @@
 01、氢原子电子云  
 ![image](files/Hydrogen02.png)
 
-02、时间演化算子法求解Schrodinger方程(Hamilton算子不显含时)  
+02、时间演化算子法求解Schrödinger方程(Hamilton算子不显含时)  
 ![image](files/1D_Schrodinger02.gif)
