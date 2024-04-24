@@ -27,7 +27,7 @@ Ny = 100  # y方向节点数
 # 势函数矩阵
 function Vfun(X::StepRangeLen, Y::StepRangeLen)
     max = 1e8
-    #V = [5 * x^2 + 5 * y^2 for x in X, y in Y]
+    #V = [5 * x^2 + 5 * y^2 for x in X, y in Y]'
     # 双缝
     a = 8  # 缝宽格子数
     b = 3  # 势垒厚度格子数
@@ -99,7 +99,7 @@ function video(Δt, X, Y, numT, ΨAbs2, V)
     Δy = abs(Y[end] - Y[end-1])
     val = [Δx * Δy * sum(ΨAbs2[:, :, k]) for k in 1:numT]  # 概率积分，检验守恒性
     VMatrix = reshape(V, Ny, Nx)
-    Vshow = VMatrix[2:Ny-1, 2:Nx-1]'  # 设置双缝时，此处加转置
+    Vshow = VMatrix[2:Ny-1, 2:Nx-1]'
     
     k = Observable(1)
     time = @lift round(($k - 1) * Δt, digits=5)
