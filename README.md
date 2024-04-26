@@ -8,3 +8,6 @@
 
 03、单电子双缝干涉，采用Crank-Nicholson法求解二维Schrödinger方程(Hamilton算子可含时)
 ![image](files/2D_Schrodinger.gif)
+
+04、采用Fourier谱求导矩阵法求解一维定态方程(周期性边界条件)
+![image](files/1D_StaSch.png)
