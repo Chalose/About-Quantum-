@@ -14,7 +14,7 @@
 
 05、采样Metropolis采样法，对二维Ising model作马尔可夫链蒙特卡洛模拟(MCMC) 
 铁磁零场： 
-![image](files/2DIsing01.jpg) 
+![image](files/2DIsing01.png) 
 ![image](files/2DIsing02.jpg) 
 反铁磁弱场： 
 ![image](files/2DIsing_sol01.jpg) 
