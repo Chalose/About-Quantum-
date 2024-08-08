@@ -12,7 +12,7 @@
 04、采用Fourier谱求导矩阵法求解一维定态方程(周期性边界条件)，实线为束缚态，虚线为散射态(Bloch波函数)
 ![image](files/1D_StaSch.png)
 
-05、采样Metropolis采样法，对二维Ising model作马尔可夫链蒙特卡洛模拟(MCMC) 
+05、采样Metropolis采样法，对二维Ising model作马尔可夫链蒙特卡洛模拟(MCMC)，部分图像由TyPlot处理
 铁磁零场： 
 ![image](files/2DIsing01.png) 
 ![image](files/2DIsing02.jpg) 
