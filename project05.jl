@@ -44,9 +44,13 @@ println("loading...")
 # 调用函数 --------------------------------------------------------------------------------------------
 # 自旋flip点的全部相邻格点线性索引
 function AdjoinIndex(k::Int)
-    G = CartesianIndices((1:Ny, 1:Nx))[k]
-    i = G[1]
-    j = G[2]
+    if k % Ny == 0
+        j = Int(k / Ny)
+        i = Int(k - (j - 1) * Ny)
+    else
+        i = k % Ny
+        j = floor(Int, k / Ny) + 1
+    end
     kU = (j - 1) * Ny + (i + Ny - 2) % Ny + 1  # up
     kD = (j - 1) * Ny + i % Ny + 1  # down
     kL = (j + Nx - 2) % Nx * Ny + i  # left
